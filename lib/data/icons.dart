@@ -5,6 +5,11 @@
 import 'package:flutter/material.dart';
 
 class GalleryIcons {
+  /// 私有构造函数意味着只能在类内部访问它，不能从外部访问它。
+  /// 这是为了防止类被意外初始化。GalleryIcons 类包含许多图标，
+  /// 这些图标必须在需要时初始化。如果 GalleryIcons 类被意外初始化，
+  /// 那么这些图标将被初始化，即使它们还不需要。
+  /// 这可能会导致性能问题和其他问题。
   GalleryIcons._();
 
   static const IconData tooltip = IconData(
